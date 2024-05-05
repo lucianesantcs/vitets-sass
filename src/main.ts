@@ -1,4 +1,5 @@
 import "./style.scss";
+import "./scripts/index";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <main class="container">
