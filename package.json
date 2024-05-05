@@ -8,9 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "npx eslint src",
-    "lint:fix": "npm run --fix",
-    "prettier": "npx prettier src --check",
-    "prettier:fix": "npm run prettier --write",
+    "lint-fix": "npx eslint --fix",
+    "prettier-check": "prettier src --check",
+    "prettier-fix": "prettier src --write",
     "prepare": "husky"
   },
   "devDependencies": {

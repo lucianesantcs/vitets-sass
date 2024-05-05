@@ -1,7 +1,7 @@
-import "./style.scss";
-import "./scripts/index";
+import './style.scss';
+import './scripts/index';
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <main class="container">
     <section class="content">
       <h1>Vite + TS + Sass Boilerplate</h1>
