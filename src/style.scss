@@ -33,7 +33,7 @@ body {
 
 .container {
   max-width: 90rem;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   display: grid;
   padding: 1.6rem;
 
@@ -42,7 +42,8 @@ body {
   }
 
   .footer {
-    grid-row: 3 / 4;
+    grid-row: 2 / 2;
     font-size: 1.2rem;
+    align-self: end;
   }
 }
