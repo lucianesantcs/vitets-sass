@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&r(o)}).observe(document,{childList:!0,subtree:!0});function l(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(e){if(e.ep)return;e.ep=!0;const t=l(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function l(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(e){if(e.ep)return;e.ep=!0;const t=l(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
   <main class="container">
     <section class="content">
       <h1>Vite + TS + Sass Boilerplate</h1>
@@ -39,6 +39,19 @@
         </li>
       </ul>
       <h3>Start coding! 🎉</h3>
+      <hr>
+      <h3>Build & Deploy the project to Github Pages:</h3>
+      <h5>Run the commands:</h5>
+      <ul>
+        <li>Run <code>npm run build</code> to build the project to the <code>.dist</code> folder</li>
+        <li>Run <code>npm run deploy</code> to deploy the code the the github pages to the <code>gh-pages</code> branch</li>
+        <li>If you prefer to run both, use <code>npm run build-deploy</code> instead and it'll build then deploy</li>
+      </ul>
+      <h5>Configure the repository:</h5>
+      <ul>
+        <li>Go to <strong>Settings</strong> -> Click on <strong>Pages</strong>. On the <strong>Build and deployment</strong> section, make sure <strong>Source</strong> is <strong>Deploy from a branch</strong>. Then, <strong>Branch</strong> should be "gh-pages" to the folder "/root" </li>
+        <li>Check the live site on the url: https://{username}.github.io/{repo-name}/. <br/>Eg: https://lucianesantcs.github.io/vitets-sass/</li>
+      </ul>
     </section>
     <footer class="footer">
       <p>© <strong><a href="https://github.com/lucianesantcs">lucianesantcs</a></strong> 2024 /
